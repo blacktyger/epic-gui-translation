@@ -1,6 +1,6 @@
 const messages = [
   {
-    title: 'Send coins',
+    title: 'Transakcje wychodzące',
     text: `The send command is the first step in building an interactive transaction.<br/>
     <br/>
     The transaction can either be carried out instantaneously using either the Tor network or http(s) address, or done manually through the exchange of files.<br/>
@@ -12,6 +12,14 @@ const messages = [
     The recipient address can either be a Tor onion address or any external http(s) address.<br/>
     <br/>
     To have proof the transaction was carried out, enter the proof address provided by the receiver.<br/>`,
+  },
+    {
+    title: `Wysyłanie`,
+    text: `Polecenie "send" jest pierwszym krokiem w budowaniu interaktywnej transakcji.<br>
+    Transakcja może być przeprowadzona błyskawicznie przy użyciu sieci TOR lub adresu HTTP(S), 
+    albo ręcznie poprzez wymianę plików. Aby rozpocząć nową transakcję, upewnij się że Twój serwer (node) jest w pełni zsynchronizowany 
+    z siecią Epic Cash. Status Twojego serwera powinien pokazywać, "synced". Adres odbiorcy może być adresem TOR (.onion) 
+    lub dowolnym adresem HTTP(S). Aby mieć dowód, że transakcja została przeprowadzona, wprowadź "Dowód Płatności" podany przez odbiorcę.`
   },
   {
     title: 'Receive coins',
@@ -25,6 +33,14 @@ const messages = [
     Your proof address is also displayed on this page.<br/>
     <br/>
     If something goes wrong and your wallet is not receiving coins, restart the listener on the Receive Page.<br/>`
+  },
+    {
+    title: 'Transakcje przychodzące',
+    text: `Aby odbierać transakcje Twój portfel musi mieć włączony "listener".
+      Przy każdym uruchomieniu/ponownym uruchomieniu listenera Twój adres Ngrok będzie się zmieniał, pamiętaj by skopiować najnowaszą jego wersję..
+      Domyślne ustawienia portfela aktywują tryb nasłuchu/odbioru przy każdym uruchomieniu, można to zmienić w ustaiwneiach.
+      W zakładce "Odbieranie" będzie lista adresów, które mogą być używane do przyjmowania transakcji, znajduje się tam również Twój 
+      "Dowód płatności". Jeśli coś pójdzie nie tak i Twój portfel nie otrzymuje monet zrestartuj listenera w zakładce "Odbieranie".`
   },
   {
     title: 'Finalize offline transaction',
